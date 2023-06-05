@@ -1,0 +1,29 @@
+.update-btn {
+  margin: 5px;
+  padding: 5px 22px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
+  }
+  background: linear-gradient(to right, #4094d0, #3abff0);
+}
+
+.enf-btn {
+  margin: 5px;
+  padding: 5px 22px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  background-color: #ccc;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+.changeborder {
+  border: 1px solid #4094d0;
+}

@@ -1,0 +1,42 @@
+.card-dasign {
+  padding: 20px 30px;
+  border: none;
+}
+
+.title-des {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4094d0;
+}
+
+.update-btn {
+  margin: 5px;
+  padding: 5px 22px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
+  }
+  background: linear-gradient(to right, #4094d0, #3abff0);
+}
+
+.text-socialmedia {
+  font-size: 22px;
+  padding-top: 15px;
+}
+
+.text-soc {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.text-addsocial {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ccc;
+  padding-top: 15px;
+  padding-left: 15px;
+}

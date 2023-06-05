@@ -1,0 +1,15 @@
+<div class="row my-5">
+  <div class="col-3" *ngFor="let child of childsList">
+    <div class="avatar-card">
+      <div class="avatar-card-avatar">
+        <img src="../../../assets/img/ava.png" alt="Photo de profil" />
+      </div>
+      <h2>{{ child.first_name + " " + child.last_name }}</h2>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="avatar-card1">
+      <img src="../../../assets/img/plus.png" alt="plus" width="50" />
+    </div>
+  </div>
+</div>

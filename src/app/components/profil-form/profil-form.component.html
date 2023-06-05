@@ -1,0 +1,85 @@
+<div class="my-4">
+  <div class="row">
+    <div class="col">
+      <label for="email" class="form-label">Nom</label>
+      <input
+        type="text"
+        class="form-control changeborder"
+        [(ngModel)]="nom"
+        name="nom"
+      />
+    </div>
+    <div class="col">
+      <label for="email" class="form-label">Prénom</label>
+      <input
+        type="text"
+        class="form-control changeborder"
+        [(ngModel)]="prenom"
+        name="prenom"
+      />
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col">
+      <label for="email" class="form-label">Adresse E-mail</label>
+      <input
+        type="text"
+        class="form-control changeborder"
+        [(ngModel)]="email"
+        name="email"
+        disabled="true"
+      />
+    </div>
+    <div class="col">
+      <label for="email" class="form-label">Date de naissance</label>
+      <input
+        type="date"
+        class="form-control changeborder"
+        [(ngModel)]="dateDeNaissance"
+        name="dateDeNaissance"
+      />
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col">
+      <label for="email" class="form-label">Numéro de téléphone</label>
+      <br />
+      <input
+        type="tel"
+        id="phone"
+        class="form-control changeborder"
+        [(ngModel)]="telephone"
+        name="telephone"
+      />
+    </div>
+    <div class="col">
+      <label for="email" class="form-label">Genre</label>
+      <div class="row py-2">
+        <div class="col-2" *ngFor="let option of options">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              id="exampleRadios1"
+              type="radio"
+              name="option"
+              [value]="option"
+              [(ngModel)]="selectedGenre"
+            />
+            <label class="form-check-label" for="exampleRadios1">
+              {{ option }}
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col-10"></div>
+    <div class="col-2 d-flex align-items-end justify-content-end">
+      <button class="btn enf-btn">Annuler</button>
+      <button class="btn btn update-btn" (click)="updateJohn()">
+        Enregistrer
+      </button>
+    </div>
+  </div>
+</div>
